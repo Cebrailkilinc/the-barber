@@ -26,22 +26,25 @@ const LandingPageViewer = () => {
                     <div className='flex items-center justify-center sm:justify-start'>
                         <Form />
                     </div>
-                    <div className='flex items-end justify-between gap-20 mt-20'>
-                        <p className='w-1/4 text-[10px] text-white'>
+                    <div className='flex  items-center md:items-end flex-col md:flex-row justify-between gap-20 mt-20'>
+                        <h1 className='md:hidden text-6xl font-bold text-center md:text-end text-white'>
+                            WHERE TRADITION <br /> MEETS MODERN STYLE
+                        </h1>
+                        <p className=' w-1/2 text-center md:w-1/4 text-[10px] text-white'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem omnis minima enim facilis illo veniam labore accusamus optio, consequuntur quidem, soluta maiores, mollitia nostrum provident dicta vero
                         </p>
-                        <h1 className='text-6xl font-bold text-end text-white'>
+                        <h1 className='hidden md:block text-6xl font-bold text-center md:text-end text-white'>
                             WHERE TRADITION <br /> MEETS MODERN STYLE
                         </h1>
                     </div>
                 </div>
             </div>
-            <ServiceBeyond/>
-            <AboutUs/>
-            <BeyondExpectation/>
-            <Feedback/>
-            <PriceMenu/>
-            <Footer/>
+            <ServiceBeyond />
+            <AboutUs />
+            <BeyondExpectation />
+            <Feedback />
+            <PriceMenu />
+            <Footer />
         </div>
     );
 }

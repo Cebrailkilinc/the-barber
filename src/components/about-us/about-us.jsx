@@ -4,8 +4,8 @@ import { Scissors } from "lucide-react"
 const AboutUs = () => {
     return (
         <div className='bg-[#1F1F1F] py-20'>
-            <div className='grid grid-cols-2 gap-4 max-w-[1280px] mx-auto text-white'>
-                <div className='col-span-1  p-4 '>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1280px] mx-auto text-white'>
+                <div className='col-span-1 text-center   p-4 '>
                     <h1 className='text-5xl' >About Us</h1>
                     <p className='text-[10px] mt-10 leading-6 pe-10' >
                         Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -19,7 +19,7 @@ const AboutUs = () => {
                         Learn More
                     </button>
                 </div>
-                <div className='col-span-1 p-4 text-white relative' >
+                <div className='col-span-1 p-4 text-white relative hidden md:block' >
                     <div className='absolute bottom-0 left-20 flex flex-col gap-5 items-center'>
                         <div className='w-52 flex items-center justify-center  gap-3 bg-[#CEA561]  px-3 py-2 rounded-full z-20' >
                             <Scissors />

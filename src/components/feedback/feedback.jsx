@@ -1,62 +1,81 @@
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import React, { useState } from "react";
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-
-const users = [
-    {
-        name: "Ali Veli",
-        photo: "https://picsum.photos/seed/ali_veli/200",
-        comment: "Berber çok ilgiliydi ve saç kesiminden memnun kaldım. Ortam temiz ve hijyenikti. Tekrar geleceğim."
-    },
-    {
-        name: "Ayşe Yılmaz",
-        photo: "https://picsum.photos/seed/ayse_yilmaz/200",
-        comment: "Saç kesimi ve sakal tıraşı mükemmeldi. Berber oldukça profesyoneldi. Ortam çok rahattı. Kesinlikle tavsiye ederim."
-    },
-    {
-        name: "Mehmet Öz",
-        photo: "https://picsum.photos/seed/mehmet_oz/200",
-        comment: "Berberin el becerisi harika. Saç kesimi tam istediğim gibi oldu. Hijyen kurallarına uygun bir mekan."
-    },
-    {
-        name: "Fatma Kaya",
-        photo: "https://picsum.photos/seed/fatma_kaya/200",
-        comment: "Profesyonel bir hizmet aldım. Saç kesimi çok güzel oldu. Berber oldukça kibar ve dikkatliydi."
-    },
-    {
-        name: "Emre Demir",
-        photo: "https://picsum.photos/seed/emre_demir/200",
-        comment: "Berber çok yetenekli ve hızlı. Saç ve sakal tıraşı istediğim gibiydi. Mekan çok temiz ve düzenli."
-    },
-    {
-        name: "Zeynep Çelik",
-        photo: "https://picsum.photos/seed/zeynep_celik/200",
-        comment: "Hizmet çok kaliteli. Berber gayet profesyonel. Saç kesimi mükemmel oldu. Temiz ve düzenli bir ortam."
-    },
-    {
-        name: "Canan Toprak",
-        photo: "https://picsum.photos/seed/canan_toprak/200",
-        comment: "Saç kesimi için geldim ve çok memnun kaldım. Berber çok güler yüzlü ve profesyoneldi. Ortam çok hijyenik."
-    },
-    {
-        name: "Ahmet Ak",
-        photo: "https://picsum.photos/seed/ahmet_ak/200",
-        comment: "Mükemmel bir berber. Saç kesiminden çok memnun kaldım. Ortam rahat ve hijyenik. Kesinlikle tekrar geleceğim."
-    }
+const testimonials = [
+  {
+    id: 1,
+    name: 'John Doe',
+    role: 'CEO of Example',
+    content: 'This is an amazing product!',
+  },
+  {
+    id: 2,
+    name: 'Jane Smith',
+    role: 'CTO of Example',
+    content: 'I love using this every day!',
+  },
+  {
+    id: 3,
+    name: 'Samuel Green',
+    role: 'Developer at Example',
+    content: 'Fantastic experience with this tool!',
+  },
 ];
 
-const Feedback = () => {
-    return (
-        <div className='bg-[#1F1F1F] py-20'>
-            <div className='max-w-[1280px] mx-auto flex flex-col items-center gap-10'>
-                <h1 className='text-[#493c28] text-4xl'>Customer Feedback</h1>
-                <div>
-                   
-                </div>
-            </div>
-        </div>
-    )
-}
+const Carousel = () => {
+  const [display, setDisplay] = useState(true);
+  const [width, setWidth] = useState(600);
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "10px",
+    slidesToShow: 5,
+    speed: 500
+  };
 
-export default Feedback;
+  return (
+    <div className="bg-[#1F1F1F]">
+      <div className="max-w-[1440px] mx-auto">
+        <div className="slider-container w-full">
+          <Slider {...settings}>
+         
+              <img className="rounded-full text-center" src="https://picsum.photos/200" />
+              <h3 className="text-white text-center">Cebrailas asdsa</h3>
+              <h3 className="text-white text-center">Cebrailas asdsa</h3>
+              <h3 className="text-white text-center">Cebrailas asdasd asdasda asdsa</h3>
+       
+           
+              <img className="rounded-full text-center" src="https://picsum.photos/200" />
+              <h3 className="text-white text-center">Cebrailas asdsa</h3>
+              <h3 className="text-white text-center">Cebrailas asdsa</h3>
+              <h3 className="text-white text-center">Cebrailas asdasd asdasda asdsa</h3>
+       
+           
+              <img className="rounded-full text-center" src="https://picsum.photos/200" />
+              <h3 className="text-white text-center">Cebrailas asdsa</h3>
+              <h3 className="text-white text-center">Cebrailas asdsa</h3>
+              <h3 className="text-white text-center">Cebrailas asdasd asdasda asdsa</h3>
+       
+           
+              <img className="rounded-full text-center" src="https://picsum.photos/200" />
+              <h3 className="text-white text-center">Cebrailas asdsa</h3>
+              <h3 className="text-white text-center">Cebrailas asdsa</h3>
+              <h3 className="text-white text-center">Cebrailas asdasd asdasda asdsa</h3>
+       
+           
+              <img className="rounded-full text-center " src="https://picsum.photos/200" />
+              <h3 className="text-white text-center">Cebrailas asdsa</h3>
+              <h3 className="text-white text-center">Cebrailas asdsa</h3>
+              <h3 className="text-white text-center">Cebrailas asdasd asdasda asdsa</h3>
+       
+          </Slider>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Carousel;

@@ -2,8 +2,8 @@ import React from 'react'
 import { Calendar, Facebook, Twitter, Phone, Mail, MapPin, Clock } from 'lucide-react'
 const Footer = () => {
     return (
-        <div className='bg-[#1F1F1F] py-20' >
-            <div className='max-w-[1440px] mx-auto flex items-start justify-between gap-10' >
+        <div className='bg-[#1F1F1F] py-20 px-1' >
+            <div className='max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  pl-10 md:pl-0 justify-between gap-10  place-items-center' >
                 <div className='text-white flex flex-col gap-8'  >
                     <h1>BERBER SHOP</h1>
                     <p className='max-w-60 text-[14px]' >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quam perspiciatis ipsa.</p>
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <ul className='flex flex-col gap-5 text-white text-[14px]' >
+                    <ul className='flex flex-col gap-5 text-white text-[14px] ' >
                         <li>Lorem, ipsum dolor.</li>
                         <li>Lorem, ipsum dolor.</li>
                         <li>Lorem, ipsum dolor.</li>

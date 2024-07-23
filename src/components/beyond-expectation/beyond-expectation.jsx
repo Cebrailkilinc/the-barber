@@ -15,7 +15,7 @@ const BeyondExpectation = () => {
                         quas et, possimus at nulla.<br /> Incidunt voluptate natus nam.
                     </p>
                 </div>
-                <div className='flex items-center justify-between mt-10' >
+                <div className='flex flex-col md:flex-row items-center justify-between mt-10' >
                     <div className='flex flex-col gap-10 items-center justify-center p-10 bg-[#2c2c2c] rounded-lg'  >
                         <Scissors className='text-white' size={40} />
                         <h1 className='text-2xl text-white' >HAIRCUT STYLE</h1>
